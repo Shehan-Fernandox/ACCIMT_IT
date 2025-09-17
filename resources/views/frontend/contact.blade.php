@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Contact - MediTrust Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="./interface assets/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./interface assets/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="./interface assets/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="./interface assets/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">./interface assets/
+  <link href="./interface assets/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="./interface assets/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="./interface assets/assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MediTrust
+  * Template URL: https://bootstrapmade.com/meditrust-bootstrap-hospital-website-template/
+  * Updated: Jul 04 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="contact-page">
+
+   @include("layout.header")
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title">
+      <div class="breadcrumbs">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#"><i class="bi bi-house"></i> Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Category</a></li>
+            <li class="breadcrumb-item active current">Contact</li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="title-wrapper">
+        <h1>Contact</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info-panel">
+            <div class="contact-info-header">
+              <h3>Contact Information</h3>
+              <p>Dignissimos deleniti accusamus rerum voluptate. Dignissimos rerum sit maiores reiciendis voluptate inventore ut.</p>
+            </div>
+
+            <div class="contact-info-cards">
+              <div class="info-card">
+                <div class="icon-container">
+                  <i class="bi bi-pin-map-fill"></i>
+                </div>
+                <div class="card-content">
+                  <h4>Our Location</h4>
+                  <p>QWW2+226, Bandaranayake Mawatha, Moratuwa 10400</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="icon-container">
+                  <i class="bi bi-envelope-open"></i>
+                </div>
+                <div class="card-content">
+                  <h4>Email Us</h4>
+                  <p> info@accmt.ac.lk</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="icon-container">
+                  <i class="bi bi-telephone-fill"></i>
+                </div>
+                <div class="card-content">
+                  <h4>Call Us</h4>
+                  <p>+94-11-2650569</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="icon-container">
+                  <i class="bi bi-clock-history"></i>
+                </div>
+                <div class="card-content">
+                  <h4>Working Hours</h4>
+                  <p>Monday-Saturday: 8.30AM - -4.15PM</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links-panel">
+              <h5>Follow Us</h5>
+              <div class="social-icons">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-panel">
+            <div class="map-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.792898716033!2d79.89743167470196!3d6.795034893202263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae24541b68f7569%3A0x7a0450e5d05b4dad!2sArthur%20C%20Clarke%20Institution%20for%20Modern%20Technologies%20(ACCIMT)!5e0!3m2!1sen!2slk!4v1752041876993!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="form-container">
+              <h3>Send Us a Message</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit mauris hendrerit faucibus imperdiet nec eget felis.</p>
+
+              <form action="forms/contact.php" method="post" class="php-email-form">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="nameInput" name="name" placeholder="Full Name" required="">
+                  <label for="nameInput">Full Name</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="emailInput" name="email" placeholder="Email Address" required="">
+                  <label for="emailInput">Email Address</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="subjectInput" name="subject" placeholder="Subject" required="">
+                  <label for="subjectInput">Subject</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <textarea class="form-control" id="messageInput" name="message" rows="5" placeholder="Your Message" style="height: 150px" required=""></textarea>
+                  <label for="messageInput">Your Message</label>
+                </div>
+
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+
+                <div class="d-grid">
+                  <button type="submit" class="btn-submit">Send Message <i class="bi bi-send-fill ms-2"></i></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">A C C I M T</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>QWW2+226, Bandaranayake Mawatha,</p>
+            <p> Moratuwa 10400</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+94-11-2650569</span></p>
+            <p><strong>Email:</strong> <span>info@accmt.ac.lk</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Hic solutasetp</h4>
+          <ul>
+            <li><a href="#">Molestiae accusamus iure</a></li>
+            <li><a href="#">Excepturi dignissimos</a></li>
+            <li><a href="#">Suscipit distinctio</a></li>
+            <li><a href="#">Dilecta</a></li>
+            <li><a href="#">Sit quas consectetur</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Nobis illum</h4>
+          <ul>
+            <li><a href="#">Ipsam</a></li>
+            <li><a href="#">Laudantium dolorum</a></li>
+            <li><a href="#">Dinera</a></li>
+            <li><a href="#">Trodelas</a></li>
+            <li><a href="#">Flexo</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">MyWebsite</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="./interface assets/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./interface assets/assets/vendor/php-email-form/validate.js"></script>
+  <script src="./interface assets/assets/vendor/aos/aos.js"></script>
+  <script src="./interface assets/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="./interface assets/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="./interface assets/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="./interface assets/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="./interface assets/assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="./interface assets/assets/js/main.js"></script>
+
+</body>
+
+</html>

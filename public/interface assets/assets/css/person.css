@@ -1,0 +1,116 @@
+
+
+@charset "UTF-8";
+
+
+:root {
+  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway",  sans-serif;
+  --nav-font: "Poppins",  sans-serif;
+}
+
+
+:root { 
+ 
+  --heading-color: #1c4b56; 
+  --accent-color: #008cad; 
+ 
+}
+
+
+/*--------------------------------------------------------------
+# Testimonials Home Section
+--------------------------------------------------------------*/
+.testimonials-home .testimonials-carousel,
+.testimonials-home .testimonials-slider {
+  overflow: hidden;
+}
+
+.testimonials-home .testimonial-item {
+  box-sizing: content-box;
+  text-align: center;
+  min-height: 320px;
+}
+
+.testimonials-home .testimonial-item .testimonial-img {
+  width: 90px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.testimonials-home .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+}
+
+.testimonials-home .testimonial-item h4 {
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin: 0;
+}
+
+.testimonials-home .testimonial-item .quote-icon-left,
+.testimonials-home .testimonial-item .quote-icon-right {
+  color: color-mix(in srgb, var(--accent-color), transparent 40%);
+  font-size: 26px;
+  line-height: 0;
+}
+
+.testimonials-home .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.testimonials-home .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+  transform: scale(-1, -1);
+}
+
+.testimonials-home .testimonial-item p {
+  font-style: italic;
+  margin: 0 15px 15px 15px;
+  padding: 20px;
+  background: color-mix(in srgb, var(--default-color), transparent 97%);
+  position: relative;
+  margin-bottom: 35px;
+  border-radius: 6px;
+}
+
+.testimonials-home .testimonial-item p::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 20px solid color-mix(in srgb, var(--default-color), transparent 97%);
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 20px);
+}
+
+.testimonials-home .swiper-wrapper {
+  height: auto;
+}
+
+.testimonials-home .swiper-pagination {
+  margin-top: 40px;
+  position: relative;
+}
+
+.testimonials-home .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: var(--background-color);
+  opacity: 1;
+  border: 1px solid var(--accent-color);
+}
+
+.testimonials-home .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+}
+

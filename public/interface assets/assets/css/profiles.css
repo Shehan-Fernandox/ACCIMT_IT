@@ -1,0 +1,553 @@
+@charset "UTF-8";
+
+/*--------------------------------------------------------------
+# Font & Color Variables
+# Help: https://bootstrapmade.com/color-system/
+--------------------------------------------------------------*/
+/* Fonts */
+:root {
+  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway",  sans-serif;
+  --nav-font: "Montserrat",  sans-serif;
+}
+
+/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+:root { 
+  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --default-color: #263a31; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #103524; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #077f46; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+}
+
+/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+:root {
+  --nav-color: rgba(255, 255, 255, 0.7);  /* The default color of the main navmenu links */
+  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #263a31; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #077f46; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+}
+
+/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+
+.light-background {
+  --background-color: #edf6f2;
+  --surface-color: #ffffff;
+}
+
+.dark-background {
+  --background-color: #081b12;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #1f3028;
+  --contrast-color: #ffffff;
+}
+
+.accent-background {
+  --background-color: #077f46;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --accent-color: #ffffff;
+  --surface-color: #2a8f5f;
+  --contrast-color: #ffffff;
+}
+
+/* Smooth scroll */
+:root {
+  scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+# General Styling & Shared Classes
+--------------------------------------------------------------*/
+body {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-family: var(--default-font);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+/*--------------------------------------------------------------
+# Agent Profile Section
+--------------------------------------------------------------*/
+.agent-profile .agent-photo-wrapper {
+  position: relative;
+}
+
+.agent-profile .agent-photo-wrapper .agent-photo {
+  border-radius: 15px;
+  box-shadow: 0 15px 30px color-mix(in srgb, var(--default-color), transparent 85%);
+}
+
+.agent-profile .agent-photo-wrapper .agent-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 8px 15px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.agent-profile .agent-photo-wrapper .agent-badge i {
+  font-size: 12px;
+}
+
+.agent-profile .agent-info .agent-name {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .agent-profile .agent-info .agent-name {
+    font-size: 2.5rem;
+  }
+}
+
+.agent-profile .agent-info .agent-title {
+  font-size: 1.25rem;
+  color: var(--accent-color);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.agent-profile .agent-info .agent-tagline {
+  font-size: 1.1rem;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  font-style: italic;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.agent-profile .contact-info-hero {
+  margin-bottom: 2rem;
+}
+
+.agent-profile .contact-info-hero .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 0.8rem;
+}
+
+.agent-profile .contact-info-hero .contact-item i {
+  color: var(--accent-color);
+  font-size: 1.1rem;
+  width: 20px;
+}
+
+.agent-profile .contact-info-hero .contact-item span {
+  font-weight: 500;
+}
+
+.agent-profile .hero-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.agent-profile .hero-actions .btn {
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.agent-profile .hero-actions .btn.btn-primary {
+  background: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.agent-profile .hero-actions .btn.btn-primary:hover {
+  background: color-mix(in srgb, var(--accent-color), black 10%);
+  border-color: color-mix(in srgb, var(--accent-color), black 10%);
+  transform: translateY(-2px);
+}
+
+.agent-profile .hero-actions .btn.btn-outline {
+  background: transparent;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.agent-profile .hero-actions .btn.btn-outline:hover {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 576px) {
+  .agent-profile .hero-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.agent-profile .stats-section {
+  background: var(--surface-color);
+  border-radius: 15px;
+  padding: 3rem 2rem;
+  margin: 4rem 0;
+  box-shadow: 0 10px 25px color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.agent-profile .stats-section .stat-item {
+  text-align: center;
+}
+
+.agent-profile .stats-section .stat-item .stat-icon {
+  width: 80px;
+  height: 80px;
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+  color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+}
+
+.agent-profile .stats-section .stat-item .stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 0.5rem;
+}
+
+.agent-profile .stats-section .stat-item .stat-label {
+  font-size: 1rem;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-weight: 500;
+}
+
+.agent-profile .stats-section .stat-item:hover .stat-icon {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  transform: translateY(-5px);
+}
+
+.agent-profile .sidebar-info .contact-card,
+.agent-profile .sidebar-info .specialties-card,
+.agent-profile .sidebar-info .certifications-card {
+  background: var(--surface-color);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 20px color-mix(in srgb, var(--default-color), transparent 92%);
+}
+
+.agent-profile .sidebar-info .contact-card h4,
+.agent-profile .sidebar-info .specialties-card h4,
+.agent-profile .sidebar-info .certifications-card h4 {
+  margin-bottom: 1.5rem;
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+.agent-profile .sidebar-info .contact-details .contact-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 1.5rem;
+}
+
+.agent-profile .sidebar-info .contact-details .contact-detail i {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  margin-top: 3px;
+  width: 20px;
+}
+
+.agent-profile .sidebar-info .contact-details .contact-detail strong {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--heading-color);
+}
+
+.agent-profile .sidebar-info .contact-details .contact-detail p {
+  margin: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  line-height: 1.5;
+}
+
+.agent-profile .sidebar-info .social-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 1.5rem;
+}
+
+.agent-profile .sidebar-info .social-links a {
+  width: 40px;
+  height: 40px;
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+  color: var(--accent-color);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.agent-profile .sidebar-info .social-links a:hover {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  transform: translateY(-3px);
+}
+
+.agent-profile .sidebar-info .specialty-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.agent-profile .sidebar-info .specialty-tags .specialty-tag {
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+  color: var(--accent-color);
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.agent-profile .sidebar-info .cert-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+.agent-profile .sidebar-info .cert-item i {
+  color: var(--accent-color);
+  font-size: 1.1rem;
+}
+
+.agent-profile .sidebar-info .cert-item span {
+  font-size: 0.95rem;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.agent-profile .bio-content h3,
+.agent-profile .bio-content h4 {
+  color: var(--heading-color);
+  margin-bottom: 1rem;
+}
+
+.agent-profile .bio-content h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.agent-profile .bio-content h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.agent-profile .bio-content p {
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  color: color-mix(in srgb, var(--default-color), transparent 10%);
+}
+
+.agent-profile .bio-content .achievements ul {
+  list-style: none;
+  padding: 0;
+}
+
+.agent-profile .bio-content .achievements ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 0.8rem;
+  color: color-mix(in srgb, var(--default-color), transparent 10%);
+}
+
+.agent-profile .bio-content .achievements ul li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.agent-profile .testimonials-section .section-heading {
+  font-size: 2.5rem;
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+.agent-profile .testimonials-section .swiper-wrapper {
+  height: auto !important;
+}
+
+.agent-profile .testimonials-section .testimonial-card {
+  background: var(--surface-color);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px color-mix(in srgb, var(--default-color), transparent 92%);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.agent-profile .testimonials-section .testimonial-card .testimonial-content {
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+}
+
+.agent-profile .testimonials-section .testimonial-card .testimonial-content p {
+  font-style: italic;
+  line-height: 1.6;
+  margin: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 10%);
+  position: relative;
+}
+
+.agent-profile .testimonials-section .testimonial-card .testimonial-content p:before {
+  content: "";
+  font-size: 3rem;
+  color: var(--accent-color);
+  position: absolute;
+  top: -10px;
+  left: -15px;
+  font-family: serif;
+}
+
+.agent-profile .testimonials-section .testimonial-card .testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.agent-profile .testimonials-section .testimonial-card .testimonial-author .author-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.agent-profile .testimonials-section .testimonial-card .testimonial-author .author-info h5 {
+  margin: 0;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+.agent-profile .testimonials-section .testimonial-card .testimonial-author .author-info span {
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  font-size: 0.9rem;
+}
+
+.agent-profile .testimonials-section .swiper-pagination {
+  margin-top: 2rem;
+}
+
+.agent-profile .testimonials-section .swiper-pagination .swiper-pagination-bullet {
+  background: color-mix(in srgb, var(--accent-color), transparent 70%);
+}
+
+.agent-profile .testimonials-section .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--accent-color);
+}
+
+.agent-profile .contact-form-section {
+  background: var(--surface-color);
+  border-radius: 20px;
+  padding: 3rem;
+  margin-top: 4rem;
+  box-shadow: 0 15px 35px color-mix(in srgb, var(--default-color), transparent 88%);
+}
+
+@media (max-width: 768px) {
+  .agent-profile .contact-form-section {
+    padding: 2rem 1.5rem;
+  }
+}
+
+.agent-profile .contact-form-section h3 {
+  color: var(--heading-color);
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+
+.agent-profile .contact-form-section .php-email-form .form-label {
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-bottom: 8px;
+}
+
+.agent-profile .contact-form-section .php-email-form input[type=text],
+.agent-profile .contact-form-section .php-email-form input[type=email],
+.agent-profile .contact-form-section .php-email-form input[type=tel],
+.agent-profile .contact-form-section .php-email-form select,
+.agent-profile .contact-form-section .php-email-form textarea {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-size: 15px;
+  border: 2px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-radius: 8px;
+  padding: 12px 15px;
+  transition: all 0.3s ease;
+}
+
+.agent-profile .contact-form-section .php-email-form input[type=text]:focus,
+.agent-profile .contact-form-section .php-email-form input[type=email]:focus,
+.agent-profile .contact-form-section .php-email-form input[type=tel]:focus,
+.agent-profile .contact-form-section .php-email-form select:focus,
+.agent-profile .contact-form-section .php-email-form textarea:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 0.2rem color-mix(in srgb, var(--accent-color), transparent 80%);
+}
+
+.agent-profile .contact-form-section .php-email-form input[type=text]::placeholder,
+.agent-profile .contact-form-section .php-email-form input[type=email]::placeholder,
+.agent-profile .contact-form-section .php-email-form input[type=tel]::placeholder,
+.agent-profile .contact-form-section .php-email-form select::placeholder,
+.agent-profile .contact-form-section .php-email-form textarea::placeholder {
+  color: color-mix(in srgb, var(--default-color), transparent 60%);
+}
+
+.agent-profile .contact-form-section .php-email-form .btn {
+  background: var(--accent-color);
+  border: none;
+  color: var(--contrast-color);
+  padding: 15px 40px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.agent-profile .contact-form-section .php-email-form .btn:hover {
+  background: color-mix(in srgb, var(--accent-color), black 10%);
+  transform: translateY(-2px);
+}
